@@ -59,4 +59,10 @@ Job {
 <% if @run_after_job != '' -%>
   RunAfterJob = "<%= @run_after_job %>"
 <% end -%>
+<% if @selection_type != '' -%>
+  Selection Type = <%= @selection_type %>
+<% end -%>
+<% if @selection_pattern != '' -%>
+  Selection Pattern = "<%= @selection_pattern%>"
+<% end -%>
 }

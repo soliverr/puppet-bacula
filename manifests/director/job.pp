@@ -30,6 +30,8 @@ define bacula::director::job (
   $run_before_job = '',
   $client_run_after_job = '',
   $run_after_job = '',
+  $selection_type = '',
+  $selection_pattern = '',
   $options_hash = {},
   $template = 'bacula/director/job.conf.erb'
 ) {

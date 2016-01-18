@@ -10,6 +10,9 @@ Job {
 <% if @client != '' -%>
   Client = "<%= @client %>"
 <% end -%>
+<% if @job_enabled != '' -%>
+  Enabled = "<%= @job_enabled%>"
+<% end -%>
 <% if @real_jobdef != '' -%>
   JobDefs = "<%= @real_jobdef %>"
 <% end -%>

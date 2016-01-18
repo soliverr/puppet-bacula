@@ -14,6 +14,7 @@
 define bacula::director::job (
   $client = '',
   $type = 'Backup',
+  $job_enabled = '',
   $level = '',
   $fileset = '',
   $storage = '',

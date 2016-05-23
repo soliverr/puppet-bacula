@@ -66,6 +66,7 @@ class bacula (
   $director_address        = params_lookup( 'director_address' ),
   $director_port           = params_lookup( 'director_port' ),
   $director_max_concurrent = params_lookup( 'director_max_concurrent' ),
+  $director_max_consolecons = params_lookup( 'director_max_consolecons' ),
   $director_password       = params_lookup( 'director_password' ),
   $director_configs_dir    = params_lookup( 'director_configs_dir' ),
   $director_clients_dir    = params_lookup( 'director_clients_dir' ),

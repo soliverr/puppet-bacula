@@ -87,6 +87,7 @@ class bacula::params {
   $director_port              = '9101'
   $director_address           = $::ipaddress
   $director_max_concurrent    = '30'
+  $director_max_consolecons   = '5'
   $director_password          = ''
   $director_configs_dir = "${bacula::params::config_dir}/director.d"
   $director_clients_dir = "${bacula::params::config_dir}/clients.d"

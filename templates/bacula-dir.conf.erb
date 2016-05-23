@@ -8,6 +8,7 @@ Director {
   WorkingDirectory = <%= scope.lookupvar('bacula::working_directory') %>
   PidDirectory = <%= scope.lookupvar('bacula::pid_directory') %>
   MaximumConcurrentJobs = <%= scope.lookupvar('bacula::director_max_concurrent') %>
+  MaximumConsoleConnections = <%= scope.lookupvar('bacula::director_max_consolecons') %>
   Password = "<%= @real_director_password %>"
   Messages = "<%= scope.lookupvar('bacula::default_messages') %>"
   DirAddress = <%= scope.lookupvar('bacula::director_address') %>

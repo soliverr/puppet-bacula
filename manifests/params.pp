@@ -56,7 +56,7 @@ class bacula::params {
   $client_port     = '9102'
   $client_address  = $::ipaddress
   $client_password = ''
-  $client_max_concurrent = ''
+  $client_max_concurrent = '30'
 
   $client_config_file = $::operatingsystem ? {
     default => "${bacula::params::config_dir}/bacula-fd.conf",

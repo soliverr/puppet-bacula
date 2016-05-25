@@ -27,6 +27,12 @@ define bacula::director::storage (
     default => $password,
   }
 
+  $real_max_concurrent = $max_concurrent ? {
+    ''      => $bacula::storage_max_concurrent,
+    default => $max_concurrent,
+  }
+
+
   $manage_storage_file_content = $template ? {
     ''      => undef,
     default => template($template),

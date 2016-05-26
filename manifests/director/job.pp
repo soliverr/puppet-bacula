@@ -33,6 +33,7 @@ define bacula::director::job (
   $run_after_job = '',
   $selection_type = '',
   $selection_pattern = '',
+  $max_concurrent = '',
   $options_hash = {},
   $template = 'bacula/director/job.conf.erb'
 ) {
@@ -58,6 +59,11 @@ define bacula::director::job (
   $real_messages = $messages ? {
     ''      => $bacula::default_messages,
     default => $messages,
+  }
+
+  $real_max_concurrent = $max_concurrent ? {
+    ''      => $bacula::director_max_concurrent,
+    default => $max_concurrent,
   }
 
   $manage_job_file_content = $template ? {

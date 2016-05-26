@@ -47,6 +47,9 @@ Job {
 <% if @real_messages != '' -%>
   Messages = "<%= @real_messages %>"
 <% end -%>
+<% if @real_max_concurrent != '' -%>
+  MaximumConcurrentJobs = <%= @real_max_concurrent %>
+<% end -%>
 <% if @where != '' -%>
   Where = <%= @where %>
 <% end -%>
